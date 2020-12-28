@@ -101,8 +101,8 @@ export const getTasks = async (req,res) =>{
 
 
 
-//actualizando tarea a checkeada
-//method POST
+// //actualizando tarea a checkeada
+// //method POST
 export const checkTask = async (req,res) =>{
 	//validando token (accion solo para usuarios)
 	await auth(req,res)

@@ -10,6 +10,7 @@ export default function Home() {
 	const [error,setError] = useState(false)
   //este hook verifica la informacion del usuario y carga sus datos
   useLogin(setError)
+  
   return (
     <HomeLayout>
       <TasksCards/>

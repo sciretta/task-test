@@ -1,0 +1,7 @@
+functions:
+  checkTask:
+    type: webhook
+    handler:
+      code: src/webhooks/checkTask/handler.js
+    path: /checktask
+    method: POST

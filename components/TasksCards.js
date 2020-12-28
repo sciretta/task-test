@@ -62,6 +62,27 @@ function TaskCard(props) {
         setCheck(prevChecked=>!prevChecked)
       }
     })
+    
+    //CLOUD FUNCTION CON WEBHOOK
+    
+    // fetch(`https://api.8base.com/ckiteac3700cf07laecb7eh83/webhook/checktask`,{
+    //   method:'POST',
+    //   body:JSON.stringify({checkId:props.id,check:!check}),
+    //   headers: {
+    //     'Content-Type':'application/json'
+    //   }
+    // })
+    // .then(res=>res.json())
+    // .then(res=>{
+    //   if(res.error){
+    //     setError(true)
+    //   }else{
+    //     setSuccess(true)
+    //     dispatch({type:'CHECK_TASK',checkId:props.id,check:!check})
+    //     setCheck(prevChecked=>!prevChecked)
+    //   }
+    // })
+    // .catch(err=>setError(true))
   }
   
   const handleDeleteTask = () =>{
